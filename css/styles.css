@@ -502,7 +502,8 @@ footer {
     fill: var(--light-text-color);
 }
 
-.footer-social .footer-social-text {
+.footer-social .footer-social-text,
+.subscribe .footer-social-text {
     margin-bottom: 16px;
     margin-top: 0;
 
@@ -512,6 +513,58 @@ footer {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.subscribe {
+    margin-left: 80px;
+}
+
+.form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-form-mail {
+    width: 264px;
+    height: 40px; 
+    border-radius: 4px;
+
+    padding-left: 16px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border: 1px solid var(--primary-white-color);
+    color: var(--primary-white-color);
+    background-color: transparent;
+
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.footer-form-mail::placeholder {
+    color: var(--primary-white-color);
+}
+
+.footer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 165px;
+    height: 40px;
+
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--secondary-accent-color);
+}
+
+.subscribe-icon {
+    margin-left: 16px;
 }
 
 .buttons-list {
