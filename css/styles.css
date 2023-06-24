@@ -522,7 +522,6 @@ footer {
 .form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
 }
 
 .footer-form-mail {
@@ -698,6 +697,12 @@ footer {
 }
 
 .backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.visually-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
