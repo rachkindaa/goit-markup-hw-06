@@ -820,7 +820,7 @@ footer {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus .modal-name-icon{
+.modal-input:focus + .modal-name-icon{
     fill: var(--accent-color);
 }
 
@@ -869,17 +869,13 @@ footer {
     letter-spacing: 0.04em;
 }
 
-.modal-input-privacy:checked+.modal-label-privacy span {
+.modal-input-privacy:checked + .modal-label-privacy span {
     background-color: var(--secondary-accent-color);
     border: none;
     fill: var(--light-text-color);
 }
 
-/* .modal-check:checked+.check-text span {
-    background-color: #ff6c00;
-    border: none;
-    fill: #d0efc1;
-} */
+
 
 .modal-label-privacy .privacy-link {
     display: inline-flex;
