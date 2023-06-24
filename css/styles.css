@@ -869,10 +869,17 @@ footer {
     letter-spacing: 0.04em;
 }
 
-.modal-input-privacy:checked .privacy-link {
+.modal-input-privacy:checked+.modal-label-privacy span {
+    background-color: var(--secondary-accent-color);
     border: none;
     fill: var(--light-text-color);
 }
+
+/* .modal-check:checked+.check-text span {
+    background-color: #ff6c00;
+    border: none;
+    fill: #d0efc1;
+} */
 
 .modal-label-privacy .privacy-link {
     display: inline-flex;
@@ -894,6 +901,8 @@ footer {
 
     min-width: 169px;
     height: 56px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     border: none;
     border-radius: 4px;
