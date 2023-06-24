@@ -495,14 +495,18 @@
                 <div class="form-field checkbox">
                     <input type="checkbox" id="user-privacy" value="true" name="user-privacy" class="modal-input-privacy visually-hidden">
                     <label for="user-privacy" class="modal-label-privacy">
-                        I accept the terms and conditions of the
-                        <span class="privacy-link"></span>
+                        <span class="privacy-link">
+                            <svg class="check-icon" width="10" height="8">
+                                <use href="./images/icons.svg#checkbox"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the &nbsp;
+                        <a href="" class="modal-checkbox-link">Privacy Policy</a>
+                        
                     </label>
                 </div>
 
-                <button type="submit" class="button modal-send-button">Send
-                    
-                </button>
+                <button type="submit" class="button modal-send-button">Send</button>
 
             </form>
         </div>

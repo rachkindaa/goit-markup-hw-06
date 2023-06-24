@@ -869,6 +869,11 @@ footer {
     letter-spacing: 0.04em;
 }
 
+.modal-input-privacy:checked .privacy-link {
+    border: none;
+    fill: var(--light-text-color);
+}
+
 .modal-label-privacy .privacy-link {
     display: inline-flex;
     align-items: center;
@@ -890,8 +895,6 @@ footer {
     min-width: 169px;
     height: 56px;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     border: none;
     border-radius: 4px;
 
@@ -904,4 +907,8 @@ footer {
     letter-spacing: 0.04em;
 
     cursor: pointer;
+}
+
+.modal-checkbox-link {
+    color: var(--accent-color);
 }
