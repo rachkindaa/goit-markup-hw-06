@@ -519,7 +519,12 @@ footer {
     margin-left: 80px;
 }
 
-.form {
+.subscribe .form {
+    display: flex;
+    gap: 24px;
+}
+
+.modal .form {
     display: flex;
     flex-direction: column;
 }
@@ -861,6 +866,10 @@ footer {
 
 .comment .modal-textarea:focus {
     border-color: var(--accent-color);
+}
+
+.comment .modal-textarea::placeholder {
+    color: rgba(46, 47, 66, 0.40);
 }
 
 .form-field.checkbox {
